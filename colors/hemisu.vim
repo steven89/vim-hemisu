@@ -125,10 +125,10 @@ endif
 " Highlights - UI ------------------------------------------{{{
 call s:h("Normal",       { "fg": s:norm, "bg": s:bg })
 call s:h("NonText",      { "fg": s:subtle })
-call s:h("Cursor",       { "fg": s:bg, "bg": s:accent3 })
+call s:h("Cursor",       { "fg": s:bg, "bg": s:normBlue })
 call s:h("Visual",       { "bg": s:faintBlue })
 call s:h("IncSearch",    { "bg": s:faintBlue })
-call s:h("Search",       { "bg": s:faintGreen })
+call s:h("Search",       { "bg": s:middleLightBlue })
 call s:h("StatusLine",   { "fg": s:norm, "bg": s:faint, "gui": "bold", "cterm": "bold" })
 call s:h("StatusLineNC", { "fg": s:dimmed, "bg": s:faint })
 call s:h("SignColumn",   { "fg": s:norm })
@@ -146,6 +146,7 @@ call s:h("DiffText",     { "bg": s:faintRed, "gui": "bold", "cterm": "bold" })
 call s:h("User1",        { "fg": s:bg, "bg": s:normGreen })
 call s:h("User2",        { "fg": s:bg, "bg": s:normRed })
 call s:h("User3",        { "fg": s:bg, "bg": s:normBlue })
+call s:h("LineNr",       { "bg": s:faint })
 hi! link WildMenu     IncSearch
 hi! link FoldColumn   SignColumn
 hi! link WarningMsg   ErrorMsg
@@ -153,7 +154,6 @@ hi! link MoreMsg      Title
 hi! link Question     MoreMsg
 hi! link ModeMsg      MoreMsg
 hi! link TabLineFill  StatusLineNC
-hi! link LineNr       NonText
 hi! link SpecialKey   NonText
 
 "}}}
